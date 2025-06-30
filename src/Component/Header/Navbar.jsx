@@ -38,7 +38,7 @@ const Navbar = () => {
       }`} to={`/wishlist`}>Wishlist</NavLink></li>
   </>
   return (
-    <div className="navbar w-11/12 mx-auto p-0">
+    <div className="navbar w-11/12 mx-auto p-0 z-50 sticky top-0 bg-transparent">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

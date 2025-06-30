@@ -6,7 +6,7 @@ const RecentCardContainer = ({ recentblogs }) => {
 
     return (
         <div>
-            <div className='grid grid-cols-1 p-12 lg:grid-cols-3 md:grid-cols-2 gap-10 gap-y-8 lg:w-9/12 w-11/12  mx-auto'>
+            <div className='grid grid-cols-1 md:p-12 lg:grid-cols-3 md:grid-cols-2 gap-10 gap-y-8  w-11/12  mx-auto'>
                 {
                     recentblogs?.map(blog => <BlogCard key={blog._id} blog={blog}></BlogCard>)
                 }
