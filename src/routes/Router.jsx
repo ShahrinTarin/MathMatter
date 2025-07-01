@@ -12,6 +12,7 @@ import BlogDetails from "../Pages/BlogDetails";
 import UpdateBlog from "../Pages/UpdateBlog";
 import Loader from "../Component/Loader";
 import ErrorPage from "../Pages/ErrorPage";
+import Contact from "../Component/Contact";
 const router = createBrowserRouter([
   {
     path: '/',
@@ -63,6 +64,11 @@ const router = createBrowserRouter([
       {
         path: '/wishlist',
         element: <PrivateRoute><Wishlist></Wishlist></PrivateRoute>,
+
+      },
+      {
+        path: '/contact',
+        Component: Contact,
 
       }
     ]

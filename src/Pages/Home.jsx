@@ -10,6 +10,7 @@ import ExtraSection from '../Component/ExtraSection';
 
 
 
+
 const Home = () => {
     const recentblogs = useLoaderData() 
     return (

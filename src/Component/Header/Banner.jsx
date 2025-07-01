@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
-import { motion } from "framer-motion"; // ✅ use `framer-motion` not `motion/react`
+import { motion } from "framer-motion"; 
 
 const Banner = () => {
   return (
@@ -9,7 +9,7 @@ const Banner = () => {
         className="hero-content text-center"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1 ,repeat: Infinity }}
       >
         <div>
           <div className='text-center'>

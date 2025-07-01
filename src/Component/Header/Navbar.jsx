@@ -36,6 +36,13 @@ const Navbar = () => {
     <li><NavLink className={({ isActive }) =>
       `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
       }`} to={`/wishlist`}>Wishlist</NavLink></li>
+
+      <li><NavLink className={({ isActive }) =>
+      `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
+      }`} to={`/contact`}>Contact</NavLink></li>
+
+     
+      
   </>
   return (
     <div className="navbar w-11/12 mx-auto p-0 z-50 sticky top-0 bg-transparent">
