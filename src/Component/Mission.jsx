@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 
 
 const Mission = () => {
@@ -13,10 +14,10 @@ const Mission = () => {
                 <br /><br /> Join us on a journey of mathematical discovery, where numbers unlock new worlds, equations inspire change and empowered way of thinking. At MathMatter, we make math meaningful—transforming challenges into triumphs and curiosity into mastery. Explore, learn, and grow with us!
                 </p>
                  <div>
-                    <button className="relative cursor-pointer rounded px-8 py-2.5 overflow-hidden group bg-[#1b9c85] hover:bg-gradient-to-r hover:from-[#1b9c85] hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
+                    <NavLink to='/' className="relative cursor-pointer rounded px-8 py-2.5 overflow-hidden group bg-[#1b9c85] hover:bg-gradient-to-r hover:from-[#1b9c85] hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300">
               <span className="absolute right-0 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
               <span className="relative">Subscribe Now</span>
-            </button>
+            </NavLink>
                  </div>
             </div>
         </div>
