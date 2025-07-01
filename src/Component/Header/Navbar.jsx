@@ -24,23 +24,27 @@ const Navbar = () => {
     <li><NavLink className={({ isActive }) =>
       `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
       }`} to='/'>Home</NavLink></li>
-    <li><NavLink className={({ isActive }) =>
-      `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
-      }`} to='/addblog'>Add Blog</NavLink></li>
+   
     <li><NavLink className={({ isActive }) =>
       `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
       }`} to='/allblogs'>All blogs</NavLink></li>
     <li><NavLink className={({ isActive }) =>
       `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
       }`} to='/featuredblogs'> Featured Blogs</NavLink></li>
-    <li><NavLink className={({ isActive }) =>
+    {
+      user && <><li><NavLink className={({ isActive }) =>
       `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
       }`} to={`/wishlist`}>Wishlist</NavLink></li>
-
+       <li><NavLink className={({ isActive }) =>
+      `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
+      }`} to='/addblog'>Add Blog</NavLink></li></>
+    }
       <li><NavLink className={({ isActive }) =>
       `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
       }`} to={`/contact`}>Contact</NavLink></li>
-
+ <li><NavLink className={({ isActive }) =>
+      `block px-3 py-2 rounded-md text-base font-medium ${isActive ? 'bg-[#EDF6EE]  text-[#1b9c85] underline transition-all duration-500' : ' text-gray-700 hover:bg-gray-100'
+      }`} to={`/careers`}>Careers</NavLink></li>
      
       
   </>

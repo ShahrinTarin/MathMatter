@@ -9,19 +9,19 @@ const Banner = () => {
         className="hero-content text-center"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 ,repeat: Infinity }}
+        transition={{ duration: 1  }}
       >
         <div>
           <div className='text-center'>
             <motion.h1
               animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
+              transition={{ duration: 4 }}
               className='text-3xl md:text-5xl font-medium text-center alegreya text-[#0F172A]'
             >
               Exploring{' '}
               <motion.span
                 animate={{ color: ['#a8a432', '#32a834', '#3258a8', '#5432a8', '#a8328d', '#a83242'] }}
-                transition={{ duration: 6, repeat: Infinity }}
+                transition={{ duration: 6 }}
               >
                 math
               </motion.span>{' '}

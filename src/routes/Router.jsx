@@ -13,6 +13,7 @@ import UpdateBlog from "../Pages/UpdateBlog";
 import Loader from "../Component/Loader";
 import ErrorPage from "../Pages/ErrorPage";
 import Contact from "../Component/Contact";
+import Careers from "../Pages/Careers";
 const router = createBrowserRouter([
   {
     path: '/',
@@ -69,6 +70,11 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         Component: Contact,
+
+      },
+       {
+        path: '/careers',
+        Component: Careers,
 
       }
     ]
